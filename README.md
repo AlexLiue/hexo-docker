@@ -1,12 +1,16 @@
 # Hexo Docker
 
+## BUILDING
+```
+docker build -t hexo:v1 .
+```
 ## RUN  
 ```
 docker run --restart=always -itd -p 10022:22 -p 80:80 --name hexo hexo:v1
 ```
 ## Port
 10022: host ssh port  
-80: web porta 
+80: web server port 
 
 ## Git Source
 ```
